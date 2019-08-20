@@ -3,6 +3,7 @@ from django.http import HttpResponseRedirect
 from  django.http import HttpResponse
 from user.models import User
 from . import  models
+from django.core.paginator import Paginator #导入分页类
 # Create your views here.
 
 def check_login(fn):
@@ -23,6 +24,21 @@ def list_view(request):
     auser = User.objects.get(id=user_id)
     notes = auser.note_set.all()
     return render(request,'note/showall.html',locals())
+
+@check_login
+def list2_view(request):
+    # 此时一定是已经登录了
+    user_id = request.session['user']['id']
+    # 根据已登录的用户id,找到当前登录的用户
+    auser = User.objects.get(id=user_id)
+    notes = auser.note_set.all()
+    # 在此处添加分页功能
+    paginator = Paginator(notes,5)
+    cur_page = request.GET.get('page',1) # 得到当前的页码数
+    cur_page = int(cur_page)
+    page = paginator.page(cur_page)
+    return render(request,'note/listpage.html',locals())
+
 
 @check_login
 def add_view(request):

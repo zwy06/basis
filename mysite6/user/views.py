@@ -68,3 +68,20 @@ def logout_view(request):
     if 'user' in request.session:
         del request.session['user'] # 清除登录记录
     return HttpResponseRedirect('/') # 返回首页
+
+from . import forms
+def reg2_view(request):
+    if request.method == 'GET':
+        myform1 = forms.MyRegForm()
+        return render(request,'user/reg2.html',locals())
+    elif request.method == 'POST':
+        myform = forms.MyRegForm(request.POST)
+        if myform.is_valid():
+            dic = myform.cleaned_data
+            username = dic['username']
+            password = dic['password']
+            password2 = dic['password2']
+            return HttpResponse(str(dic))
+        else:
+            return HttpResponse('验证失败')
+

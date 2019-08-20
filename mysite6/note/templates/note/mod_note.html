@@ -6,6 +6,7 @@
 </head>
 <body>
     <form action="/note/mod/{{ anote.id }}" method="post">
+        {% csrf_token %}
         <div>
             <label>标题</label>
             <input type="text" name="title" value="{{ anote.title }}">
