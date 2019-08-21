@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse,HttpResponseRedirect
-from . import models
+from django.contrib.auth.models import User # 导入django中的User模型类
+
 
 # Create your views here.
 def reg_view(request):
@@ -22,16 +23,19 @@ def reg_view(request):
         if password1 != password2:
             password2_err = '两次密码不一致'
             return render(request,'user/register.html',locals())
-        # 检查数据库是否已有username这条记录,如果没有则完成注册
         try:
-            auser = models.User.objects.get(username=username)
+            auser = User.objects.get(username=username)
             username_err = '用户名已存在'
             return render(request,'user/register.html',locals())
         except Exception as err:
-            auser = models.User.objects.create(
+            # auser = User.objects.create_user(
+            auser = User.objects.create_superuser(
                 username=username,
-                password=password1
+                password=password1,
+                email=''
             )
+            auser.last_name = 'tedu'
+            auser.save()
         html = "注册成功!<a href='/user/login'>进入登录</a>"
         resp = HttpResponse(html)
         # 添加cook
@@ -48,18 +52,21 @@ def login_view(request):
         if username == '':
             username_err = '用户名不能为空'
             return render(request,'user/login.html',locals())
-        # 处理登录的逻辑
         try:
-            auser = models.User.objects.get(username=username,password=password)
+            auser = User.objects.get(username=username)
             # 记录一个登录状态
-            request.session['user'] = {
-                'username':username,
-                'id':auser.id # 记录当前用户的id
-            }
-            resp = HttpResponseRedirect('/')
-            if 'remeber' in request.POST: # 选中状态
-                resp.set_cookie('username',username)
-            return resp
+            if auser.check_password(password):
+                request.session['user'] = {
+                    'username':username,
+                    'id':auser.id # 记录当前用户的id
+                }
+                resp = HttpResponseRedirect('/')
+                if 'remeber' in request.POST: # 选中状态
+                    resp.set_cookie('username',username)
+                return resp
+            else:
+                password_err = '密码错误'
+                return render(request,'user/login.html',locals())
         except Exception as err:
             password_err = '用户名或者密码不正确'
             return render(request,'user/login.html',locals())
@@ -84,4 +91,30 @@ def reg2_view(request):
             return HttpResponse(str(dic))
         else:
             return HttpResponse('验证失败')
+
+def change_pwd_view(request):
+    if request.method == 'GET':
+        myform1 = forms.MyChangePwdForm()
+        return render(request,'user/change_pwd.html',locals())
+    elif request.method == 'POST':
+        myform = forms.MyChangePwdForm(request.POST)
+        if myform.is_valid():
+            dic = myform.cleaned_data
+            username = dic['username']
+            password_old = dic['password_old']
+            password = dic['password']
+            try:
+                auser = User.objects.get(username = username)
+                if auser.check_password(password_old):
+                    auser.set_password(password)
+                    auser.save()
+                else:
+                    err = '密码错误'
+                    return render(request,'user/change_pwd.html',locals())
+            except Exception as err:
+                err = '用户名不对'
+                return render(request,'user/change_pwd.html',locals())
+            return HttpResponseRedirect('/user/login')
+
+
 

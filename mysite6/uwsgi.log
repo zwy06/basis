@@ -1,0 +1,1025 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug 21 15:51:17 2019] ***
+compiled with version: 7.4.0 on 21 August 2019 06:28:58
+os: Linux-5.0.0-25-generic #26~18.04.1-Ubuntu SMP Thu Aug 1 13:51:02 UTC 2019
+nodename: tarena
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/tarena/django/day06/code/mysite6
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/django/day06/code/mysite6
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 31162
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug 21 15:55:10 2019] ***
+compiled with version: 7.4.0 on 21 August 2019 06:28:58
+os: Linux-5.0.0-25-generic #26~18.04.1-Ubuntu SMP Thu Aug 1 13:51:02 UTC 2019
+nodename: tarena
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/tarena/django/day06/code/mysite6
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/django/day06/code/mysite6
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 31162
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8000 fd 4
+spawned uWSGI http 1 (pid: 25995)
+uwsgi socket 0 bound to TCP address 127.0.0.1:35719 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x556e2dd46360
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x556e2dd46360 pid: 25994 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 25994, cores: 1)
+中间件 process_request方法被调用
+路由是: /login
+请求方式: GET
+[pid: 25994|app: 0|req: 1/1] 127.0.0.1 () {40 vars in 839 bytes} [Wed Aug 21 15:55:16 2019] GET /login => generated 79 bytes in 45 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /
+请求方式: GET
+[pid: 25994|app: 0|req: 2/2] 127.0.0.1 () {38 vars in 798 bytes} [Wed Aug 21 15:55:28 2019] GET / => generated 286 bytes in 54 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /login2
+请求方式: GET
+[pid: 25994|app: 0|req: 3/3] 127.0.0.1 () {38 vars in 810 bytes} [Wed Aug 21 15:55:44 2019] GET /login2 => generated 80 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /reg
+请求方式: GET
+[pid: 25994|app: 0|req: 4/4] 127.0.0.1 () {38 vars in 804 bytes} [Wed Aug 21 15:55:55 2019] GET /reg => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /note/add
+请求方式: GET
+[pid: 25994|app: 0|req: 5/5] 127.0.0.1 () {38 vars in 814 bytes} [Wed Aug 21 15:56:31 2019] GET /note/add => generated 627 bytes in 15 msecs (HTTP/1.1 200) 5 headers in 277 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug 21 16:46:57 2019] ***
+compiled with version: 7.4.0 on 21 August 2019 06:28:58
+os: Linux-5.0.0-25-generic #26~18.04.1-Ubuntu SMP Thu Aug 1 13:51:02 UTC 2019
+nodename: tarena
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/tarena/django/day06/code/mysite6
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/django/day06/code/mysite6
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 31162
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x56000bea1240
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x56000bea1240 pid: 28231 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 28231, cores: 1)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+中间件 process_request方法被调用
+路由是: /
+请求方式: GET
+[pid: 28231|app: 0|req: 1/1] 127.0.0.1 () {46 vars in 930 bytes} [Wed Aug 21 16:48:02 2019] GET / => generated 286 bytes in 41 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /reg
+请求方式: GET
+[pid: 28231|app: 0|req: 2/2] 127.0.0.1 () {42 vars in 843 bytes} [Wed Aug 21 16:48:26 2019] GET /reg => generated 77 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /note/add
+请求方式: GET
+[pid: 28231|app: 0|req: 3/3] 127.0.0.1 () {42 vars in 853 bytes} [Wed Aug 21 16:48:45 2019] GET /note/add => generated 627 bytes in 13 msecs (HTTP/1.1 200) 5 headers in 277 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug 21 16:58:31 2019] ***
+compiled with version: 7.4.0 on 21 August 2019 06:28:58
+os: Linux-5.0.0-25-generic #26~18.04.1-Ubuntu SMP Thu Aug 1 13:51:02 UTC 2019
+nodename: tarena
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/tarena/django/day06/code/mysite6
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/django/day06/code/mysite6
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 31162
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:5000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x5620c264d240
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5620c264d240 pid: 29066 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 29066, cores: 1)
+中间件 process_request方法被调用
+路由是: /note/add
+请求方式: GET
+[pid: 29066|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 884 bytes} [Wed Aug 21 16:58:39 2019] GET /note/add => generated 627 bytes in 44 msecs (HTTP/1.1 200) 5 headers in 277 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /note/add
+请求方式: GET
+[pid: 29066|app: 0|req: 2/2] 127.0.0.1 () {44 vars in 884 bytes} [Wed Aug 21 16:58:50 2019] GET /note/add => generated 627 bytes in 13 msecs (HTTP/1.1 200) 5 headers in 277 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /
+请求方式: GET
+[pid: 29066|app: 0|req: 3/3] 127.0.0.1 () {42 vars in 837 bytes} [Wed Aug 21 16:58:55 2019] GET / => generated 286 bytes in 14 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /note/showall
+请求方式: GET
+[pid: 29066|app: 0|req: 4/4] 127.0.0.1 () {42 vars in 861 bytes} [Wed Aug 21 16:59:11 2019] GET /note/showall => generated 86 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /note/add
+请求方式: GET
+[pid: 29066|app: 0|req: 5/5] 127.0.0.1 () {42 vars in 853 bytes} [Wed Aug 21 16:59:16 2019] GET /note/add => generated 627 bytes in 12 msecs (HTTP/1.1 200) 5 headers in 277 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /note/mod
+请求方式: GET
+[pid: 29066|app: 0|req: 6/6] 127.0.0.1 () {42 vars in 853 bytes} [Wed Aug 21 17:20:00 2019] GET /note/mod => generated 82 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /note/mod
+请求方式: GET
+[pid: 29066|app: 0|req: 7/7] 127.0.0.1 () {44 vars in 884 bytes} [Wed Aug 21 17:20:06 2019] GET /note/mod => generated 82 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /note/add
+请求方式: GET
+[pid: 29066|app: 0|req: 8/8] 127.0.0.1 () {42 vars in 853 bytes} [Wed Aug 21 17:20:11 2019] GET /note/add => generated 627 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 277 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /note/
+请求方式: GET
+./note/views.py:38: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'note.models.Note'> QuerySet.
+  paginator = Paginator(notes,5)
+[pid: 29066|app: 0|req: 9/9] 127.0.0.1 () {44 vars in 888 bytes} [Wed Aug 21 17:20:45 2019] GET /note/ => generated 1567 bytes in 114 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /note/mod/3
+请求方式: GET
+[pid: 29066|app: 0|req: 10/10] 127.0.0.1 () {44 vars in 895 bytes} [Wed Aug 21 17:20:47 2019] GET /note/mod/3 => generated 659 bytes in 24 msecs (HTTP/1.1 200) 5 headers in 277 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /note/
+请求方式: GET
+[pid: 29066|app: 0|req: 11/11] 127.0.0.1 () {44 vars in 890 bytes} [Wed Aug 21 17:20:49 2019] GET /note/ => generated 1567 bytes in 31 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /note/mod/2
+请求方式: GET
+[pid: 29066|app: 0|req: 12/12] 127.0.0.1 () {44 vars in 895 bytes} [Wed Aug 21 17:20:51 2019] GET /note/mod/2 => generated 653 bytes in 20 msecs (HTTP/1.1 200) 5 headers in 277 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /note/
+请求方式: GET
+[pid: 29066|app: 0|req: 13/13] 127.0.0.1 () {44 vars in 890 bytes} [Wed Aug 21 17:20:53 2019] GET /note/ => generated 1567 bytes in 26 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /
+请求方式: GET
+[pid: 29066|app: 0|req: 14/14] 127.0.0.1 () {44 vars in 861 bytes} [Wed Aug 21 17:32:10 2019] GET / => generated 286 bytes in 12 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /
+请求方式: GET
+[pid: 29066|app: 0|req: 15/15] 127.0.0.1 () {44 vars in 868 bytes} [Wed Aug 21 17:32:15 2019] GET / => generated 286 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /
+请求方式: GET
+[pid: 29066|app: 0|req: 16/16] 127.0.0.1 () {44 vars in 868 bytes} [Wed Aug 21 17:32:19 2019] GET / => generated 286 bytes in 10 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug 21 19:02:03 2019] ***
+compiled with version: 7.4.0 on 21 August 2019 06:28:58
+os: Linux-5.0.0-25-generic #26~18.04.1-Ubuntu SMP Thu Aug 1 13:51:02 UTC 2019
+nodename: tarena
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/tarena/django/day06/code/mysite6
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/django/day06/code/mysite6
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 31162
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x561f28a75240
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x561f28a75240 pid: 9434 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 9434, cores: 1)
+中间件 process_request方法被调用
+路由是: /
+请求方式: GET
+[pid: 9434|app: 0|req: 1/1] 127.0.0.1 () {40 vars in 687 bytes} [Wed Aug 21 19:02:09 2019] GET / => generated 236 bytes in 55 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/login
+请求方式: GET
+[pid: 9434|app: 0|req: 2/2] 127.0.0.1 () {42 vars in 740 bytes} [Wed Aug 21 19:02:14 2019] GET /user/login => generated 1013 bytes in 13 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/login
+请求方式: POST
+[pid: 9434|app: 0|req: 3/3] 127.0.0.1 () {52 vars in 1018 bytes} [Wed Aug 21 19:02:18 2019] POST /user/login => generated 1058 bytes in 12 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/login
+请求方式: GET
+[pid: 9434|app: 0|req: 4/4] 127.0.0.1 () {44 vars in 829 bytes} [Wed Aug 21 19:02:21 2019] GET /user/login => generated 1013 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /
+请求方式: GET
+[pid: 9434|app: 0|req: 5/5] 127.0.0.1 () {42 vars in 776 bytes} [Wed Aug 21 19:02:22 2019] GET / => generated 236 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/reg
+请求方式: GET
+[pid: 9434|app: 0|req: 6/6] 127.0.0.1 () {44 vars in 825 bytes} [Wed Aug 21 19:02:23 2019] GET /user/reg => generated 1013 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/reg
+请求方式: POST
+[pid: 9434|app: 0|req: 7/7] 127.0.0.1 () {52 vars in 1012 bytes} [Wed Aug 21 19:02:31 2019] POST /user/reg => generated 51 bytes in 301 msecs (HTTP/1.1 200) 4 headers in 151 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/login
+请求方式: GET
+[pid: 9434|app: 0|req: 8/8] 127.0.0.1 () {44 vars in 859 bytes} [Wed Aug 21 19:02:33 2019] GET /user/login => generated 1024 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/login
+请求方式: POST
+[pid: 9434|app: 0|req: 9/9] 127.0.0.1 () {52 vars in 1040 bytes} [Wed Aug 21 19:02:35 2019] POST /user/login => generated 0 bytes in 136 msecs (HTTP/1.1 302) 6 headers in 268 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /
+请求方式: GET
+[pid: 9434|app: 0|req: 10/10] 127.0.0.1 () {46 vars in 916 bytes} [Wed Aug 21 19:02:36 2019] GET / => generated 291 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /note/
+请求方式: GET
+./note/views.py:38: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'note.models.Note'> QuerySet.
+  paginator = Paginator(notes,5)
+[pid: 9434|app: 0|req: 11/11] 127.0.0.1 () {44 vars in 885 bytes} [Wed Aug 21 19:02:38 2019] GET /note/ => generated 614 bytes in 36 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /note/add
+请求方式: GET
+[pid: 9434|app: 0|req: 12/12] 127.0.0.1 () {44 vars in 896 bytes} [Wed Aug 21 19:02:44 2019] GET /note/add => generated 627 bytes in 16 msecs (HTTP/1.1 200) 5 headers in 277 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /note/add
+请求方式: POST
+[pid: 9434|app: 0|req: 13/13] 127.0.0.1 () {52 vars in 1078 bytes} [Wed Aug 21 19:02:49 2019] POST /note/add => generated 0 bytes in 327 msecs (HTTP/1.1 302) 5 headers in 142 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /note/
+请求方式: GET
+[pid: 9434|app: 0|req: 14/14] 127.0.0.1 () {46 vars in 924 bytes} [Wed Aug 21 19:02:49 2019] GET /note/ => generated 933 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /note/add
+请求方式: GET
+[pid: 9434|app: 0|req: 15/15] 127.0.0.1 () {44 vars in 896 bytes} [Wed Aug 21 19:02:51 2019] GET /note/add => generated 627 bytes in 15 msecs (HTTP/1.1 200) 5 headers in 277 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /note/add
+请求方式: POST
+[pid: 9434|app: 0|req: 16/16] 127.0.0.1 () {52 vars in 1078 bytes} [Wed Aug 21 19:02:56 2019] POST /note/add => generated 0 bytes in 176 msecs (HTTP/1.1 302) 5 headers in 142 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /note/
+请求方式: GET
+[pid: 9434|app: 0|req: 17/17] 127.0.0.1 () {46 vars in 924 bytes} [Wed Aug 21 19:02:56 2019] GET /note/ => generated 1253 bytes in 23 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /note/ad
+请求方式: GET
+[pid: 9434|app: 0|req: 18/18] 127.0.0.1 () {42 vars in 856 bytes} [Wed Aug 21 19:03:01 2019] GET /note/ad => generated 126 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 116 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /
+请求方式: GET
+[pid: 9434|app: 0|req: 19/19] 127.0.0.1 () {42 vars in 842 bytes} [Wed Aug 21 19:03:09 2019] GET / => generated 291 bytes in 11 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/logout
+请求方式: GET
+[pid: 9434|app: 0|req: 20/20] 127.0.0.1 () {44 vars in 897 bytes} [Wed Aug 21 19:03:13 2019] GET /user/logout => generated 0 bytes in 92 msecs (HTTP/1.1 302) 6 headers in 268 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /
+请求方式: GET
+[pid: 9434|app: 0|req: 21/21] 127.0.0.1 () {44 vars in 875 bytes} [Wed Aug 21 19:03:14 2019] GET / => generated 236 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/reg
+请求方式: GET
+[pid: 9434|app: 0|req: 22/22] 127.0.0.1 () {44 vars in 891 bytes} [Wed Aug 21 19:03:15 2019] GET /user/reg => generated 1013 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/reg1
+请求方式: GET
+[pid: 9434|app: 0|req: 23/23] 127.0.0.1 () {42 vars in 860 bytes} [Wed Aug 21 19:03:18 2019] GET /user/reg1 => generated 126 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 116 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /
+请求方式: GET
+[pid: 9434|app: 0|req: 24/24] 127.0.0.1 () {42 vars in 820 bytes} [Wed Aug 21 19:14:48 2019] GET / => generated 236 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /favicon.ico
+请求方式: GET
+[pid: 9434|app: 0|req: 25/25] 127.0.0.1 () {42 vars in 761 bytes} [Wed Aug 21 19:14:49 2019] GET /favicon.ico => generated 126 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 116 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /note/change
+请求方式: GET
+[pid: 9434|app: 0|req: 26/26] 127.0.0.1 () {42 vars in 842 bytes} [Wed Aug 21 19:15:05 2019] GET /note/change => generated 126 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 116 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /note/add
+请求方式: GET
+[pid: 9434|app: 0|req: 27/27] 127.0.0.1 () {42 vars in 836 bytes} [Wed Aug 21 19:15:11 2019] GET /note/add => generated 0 bytes in 10 msecs (HTTP/1.1 302) 5 headers in 147 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/login
+请求方式: GET
+[pid: 9434|app: 0|req: 28/28] 127.0.0.1 () {42 vars in 840 bytes} [Wed Aug 21 19:15:11 2019] GET /user/login => generated 1013 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/reg
+请求方式: GET
+[pid: 9434|app: 0|req: 29/29] 127.0.0.1 () {42 vars in 836 bytes} [Wed Aug 21 19:15:23 2019] GET /user/reg => generated 1013 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/change
+请求方式: GET
+[pid: 9434|app: 0|req: 30/30] 127.0.0.1 () {42 vars in 842 bytes} [Wed Aug 21 19:15:28 2019] GET /user/change => generated 126 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 116 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug 21 19:16:33 2019] ***
+compiled with version: 7.4.0 on 21 August 2019 06:28:58
+os: Linux-5.0.0-25-generic #26~18.04.1-Ubuntu SMP Thu Aug 1 13:51:02 UTC 2019
+nodename: tarena
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/tarena/django/day06/code/mysite6
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/django/day06/code/mysite6
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 31162
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x56474c3ac240
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x56474c3ac240 pid: 10580 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 10580, cores: 1)
+中间件 process_request方法被调用
+路由是: /user/change
+请求方式: GET
+[pid: 10580|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 873 bytes} [Wed Aug 21 19:16:41 2019] GET /user/change => generated 27 bytes in 367 msecs (HTTP/1.1 500) 5 headers in 280 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug 21 19:22:39 2019] ***
+compiled with version: 7.4.0 on 21 August 2019 06:28:58
+os: Linux-5.0.0-25-generic #26~18.04.1-Ubuntu SMP Thu Aug 1 13:51:02 UTC 2019
+nodename: tarena
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/tarena/django/day06/code/mysite6
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/django/day06/code/mysite6
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 31162
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug 21 19:23:32 2019] ***
+compiled with version: 7.4.0 on 21 August 2019 06:28:58
+os: Linux-5.0.0-25-generic #26~18.04.1-Ubuntu SMP Thu Aug 1 13:51:02 UTC 2019
+nodename: tarena
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/tarena/django/day06/code/mysite6
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/django/day06/code/mysite6
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 31162
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug 21 19:25:00 2019] ***
+compiled with version: 7.4.0 on 21 August 2019 06:28:58
+os: Linux-5.0.0-25-generic #26~18.04.1-Ubuntu SMP Thu Aug 1 13:51:02 UTC 2019
+nodename: tarena
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/tarena/django/day06/code/mysite6
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/django/day06/code/mysite6
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 31162
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x5622c14f5240
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5622c14f5240 pid: 11651 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 11651, cores: 1)
+中间件 process_request方法被调用
+路由是: /note/add
+请求方式: GET
+[pid: 11651|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 734 bytes} [Wed Aug 21 19:25:05 2019] GET /note/add => generated 0 bytes in 22 msecs (HTTP/1.1 302) 5 headers in 147 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/login
+请求方式: GET
+[pid: 11651|app: 0|req: 2/2] 127.0.0.1 () {42 vars in 738 bytes} [Wed Aug 21 19:25:05 2019] GET /user/login => generated 1013 bytes in 13 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/change
+请求方式: GET
+[pid: 11651|app: 0|req: 3/3] 127.0.0.1 () {42 vars in 798 bytes} [Wed Aug 21 19:25:13 2019] GET /user/change => generated 9489 bytes in 34 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/change
+请求方式: GET
+[pid: 11651|app: 0|req: 4/4] 127.0.0.1 () {44 vars in 829 bytes} [Wed Aug 21 19:25:27 2019] GET /user/change => generated 9489 bytes in 31 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/change
+请求方式: GET
+[pid: 11651|app: 0|req: 5/5] 127.0.0.1 () {44 vars in 829 bytes} [Wed Aug 21 19:26:37 2019] GET /user/change => generated 9489 bytes in 25 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug 21 19:26:56 2019] ***
+compiled with version: 7.4.0 on 21 August 2019 06:28:58
+os: Linux-5.0.0-25-generic #26~18.04.1-Ubuntu SMP Thu Aug 1 13:51:02 UTC 2019
+nodename: tarena
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/tarena/django/day06/code/mysite6
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/django/day06/code/mysite6
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 31162
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x55d8d2b30240
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55d8d2b30240 pid: 11720 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 11720, cores: 1)
+中间件 process_request方法被调用
+路由是: /user/chang
+请求方式: GET
+[pid: 11720|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 796 bytes} [Wed Aug 21 19:27:00 2019] GET /user/chang => generated 126 bytes in 35 msecs (HTTP/1.1 404) 3 headers in 116 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/change
+请求方式: GET
+[pid: 11720|app: 0|req: 2/2] 127.0.0.1 () {42 vars in 798 bytes} [Wed Aug 21 19:27:04 2019] GET /user/change => generated 893 bytes in 24 msecs (HTTP/1.1 200) 5 headers in 277 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/change
+请求方式: POST
+[pid: 11720|app: 0|req: 3/3] 127.0.0.1 () {52 vars in 1021 bytes} [Wed Aug 21 19:27:19 2019] POST /user/change => generated 27 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 108 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/change
+请求方式: GET
+[pid: 11720|app: 0|req: 4/4] 127.0.0.1 () {42 vars in 798 bytes} [Wed Aug 21 19:27:28 2019] GET /user/change => generated 893 bytes in 16 msecs (HTTP/1.1 200) 5 headers in 277 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/change
+请求方式: GET
+[pid: 11720|app: 0|req: 5/5] 127.0.0.1 () {44 vars in 829 bytes} [Wed Aug 21 19:27:37 2019] GET /user/change => generated 893 bytes in 12 msecs (HTTP/1.1 200) 5 headers in 277 bytes (1 switches on core 0)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+[pid: 11720|app: 0|req: 6/6] 127.0.0.1 () {42 vars in 786 bytes} [Wed Aug 21 19:29:25 2019] GET /admin => generated 0 bytes in 2 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /admin/
+请求方式: GET
+[pid: 11720|app: 0|req: 7/7] 127.0.0.1 () {42 vars in 788 bytes} [Wed Aug 21 19:29:25 2019] GET /admin/ => generated 0 bytes in 36 msecs (HTTP/1.1 302) 7 headers in 265 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /admin/login/
+请求方式: GET
+[pid: 11720|app: 0|req: 8/8] 127.0.0.1 () {42 vars in 825 bytes} [Wed Aug 21 19:29:25 2019] GET /admin/login/?next=/admin/ => generated 1652 bytes in 34 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /admin/login/
+请求方式: GET
+[pid: 11720|app: 0|req: 9/9] 127.0.0.1 () {44 vars in 856 bytes} [Wed Aug 21 19:30:00 2019] GET /admin/login/?next=/admin/ => generated 1652 bytes in 19 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /admin/login/
+请求方式: POST
+[pid: 11720|app: 0|req: 10/10] 127.0.0.1 () {52 vars in 1062 bytes} [Wed Aug 21 19:31:15 2019] POST /admin/login/?next=/admin/ => generated 0 bytes in 286 msecs (HTTP/1.1 302) 9 headers in 531 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /admin/
+请求方式: GET
+[pid: 11720|app: 0|req: 11/11] 127.0.0.1 () {46 vars in 921 bytes} [Wed Aug 21 19:31:15 2019] GET /admin/ => generated 3369 bytes in 27 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /admin/login/
+请求方式: GET
+[pid: 11720|app: 0|req: 12/12] 127.0.0.1 () {42 vars in 869 bytes} [Wed Aug 21 19:31:20 2019] GET /admin/login/?next=/admin/ => generated 0 bytes in 13 msecs (HTTP/1.1 302) 7 headers in 246 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /admin/
+请求方式: GET
+[pid: 11720|app: 0|req: 13/13] 127.0.0.1 () {42 vars in 832 bytes} [Wed Aug 21 19:31:20 2019] GET /admin/ => generated 3369 bytes in 40 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug 21 19:33:42 2019] ***
+compiled with version: 7.4.0 on 21 August 2019 06:28:58
+os: Linux-5.0.0-25-generic #26~18.04.1-Ubuntu SMP Thu Aug 1 13:51:02 UTC 2019
+nodename: tarena
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/tarena/django/day06/code/mysite6
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/django/day06/code/mysite6
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 31162
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x563ee36e1240
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x563ee36e1240 pid: 12322 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 12322, cores: 1)
+中间件 process_request方法被调用
+路由是: /admin/
+请求方式: GET
+[pid: 12322|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 832 bytes} [Wed Aug 21 19:33:58 2019] GET /admin/ => generated 3369 bytes in 84 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /admin/
+请求方式: GET
+[pid: 12322|app: 0|req: 2/2] 127.0.0.1 () {42 vars in 832 bytes} [Wed Aug 21 19:34:11 2019] GET /admin/ => generated 3369 bytes in 24 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /admin/logout/
+请求方式: GET
+[pid: 12322|app: 0|req: 3/3] 127.0.0.1 () {44 vars in 885 bytes} [Wed Aug 21 19:34:17 2019] GET /admin/logout/ => generated 1011 bytes in 113 msecs (HTTP/1.1 200) 6 headers in 298 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug 21 19:35:22 2019] ***
+compiled with version: 7.4.0 on 21 August 2019 06:28:58
+os: Linux-5.0.0-25-generic #26~18.04.1-Ubuntu SMP Thu Aug 1 13:51:02 UTC 2019
+nodename: tarena
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/tarena/django/day06/code/mysite6
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/django/day06/code/mysite6
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 31162
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x55d7a21ac240
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55d7a21ac240 pid: 12432 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 12432, cores: 1)
+中间件 process_request方法被调用
+路由是: /admin/
+请求方式: GET
+[pid: 12432|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 812 bytes} [Wed Aug 21 19:35:28 2019] GET /admin/ => generated 0 bytes in 76 msecs (HTTP/1.1 302) 7 headers in 265 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /admin/login/
+请求方式: GET
+[pid: 12432|app: 0|req: 2/2] 127.0.0.1 () {44 vars in 849 bytes} [Wed Aug 21 19:35:28 2019] GET /admin/login/?next=/admin/ => generated 1652 bytes in 41 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /admin/
+请求方式: GET
+[pid: 12432|app: 0|req: 3/3] 127.0.0.1 () {42 vars in 788 bytes} [Wed Aug 21 19:35:30 2019] GET /admin/ => generated 0 bytes in 3 msecs (HTTP/1.1 302) 7 headers in 265 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /admin/login/
+请求方式: GET
+[pid: 12432|app: 0|req: 4/4] 127.0.0.1 () {42 vars in 825 bytes} [Wed Aug 21 19:35:30 2019] GET /admin/login/?next=/admin/ => generated 1652 bytes in 12 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug 21 19:36:37 2019] ***
+compiled with version: 7.4.0 on 21 August 2019 06:28:58
+os: Linux-5.0.0-25-generic #26~18.04.1-Ubuntu SMP Thu Aug 1 13:51:02 UTC 2019
+nodename: tarena
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/tarena/django/day06/code/mysite6
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/django/day06/code/mysite6
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 31162
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x55edc9921240
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55edc9921240 pid: 12533 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 12533, cores: 1)
+中间件 process_request方法被调用
+路由是: /admin/
+请求方式: GET
+[pid: 12533|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 788 bytes} [Wed Aug 21 19:36:46 2019] GET /admin/ => generated 0 bytes in 63 msecs (HTTP/1.1 302) 7 headers in 265 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /admin/login/
+请求方式: GET
+[pid: 12533|app: 0|req: 2/2] 127.0.0.1 () {42 vars in 825 bytes} [Wed Aug 21 19:36:47 2019] GET /admin/login/?next=/admin/ => generated 1652 bytes in 49 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/change
+请求方式: GET
+[pid: 12533|app: 0|req: 3/3] 127.0.0.1 () {44 vars in 829 bytes} [Wed Aug 21 19:40:01 2019] GET /user/change => generated 893 bytes in 20 msecs (HTTP/1.1 200) 5 headers in 277 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/change
+请求方式: POST
+Internal Server Error: /user/change
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view user.views.change_pwd_view didn't return an HttpResponse object. It returned None instead.
+[pid: 12533|app: 0|req: 4/4] 127.0.0.1 () {52 vars in 1021 bytes} [Wed Aug 21 19:40:11 2019] POST /user/change => generated 51982 bytes in 39 msecs (HTTP/1.1 500) 4 headers in 129 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug 21 19:52:27 2019] ***
+compiled with version: 7.4.0 on 21 August 2019 06:28:58
+os: Linux-5.0.0-25-generic #26~18.04.1-Ubuntu SMP Thu Aug 1 13:51:02 UTC 2019
+nodename: tarena
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/tarena/django/day06/code/mysite6
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/django/day06/code/mysite6
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 31162
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x561792311240
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x561792311240 pid: 13112 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 13112, cores: 1)
+中间件 process_request方法被调用
+路由是: /user/login
+请求方式: GET
+[pid: 13112|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 796 bytes} [Wed Aug 21 19:52:39 2019] GET /user/login => generated 1013 bytes in 31 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/change
+请求方式: GET
+[pid: 13112|app: 0|req: 2/2] 127.0.0.1 () {42 vars in 798 bytes} [Wed Aug 21 19:52:46 2019] GET /user/change => generated 893 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 277 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/change
+请求方式: POST
+[pid: 13112|app: 0|req: 3/3] 127.0.0.1 () {52 vars in 1021 bytes} [Wed Aug 21 19:53:03 2019] POST /user/change => generated 27 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 108 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug 21 20:03:58 2019] ***
+compiled with version: 7.4.0 on 21 August 2019 06:28:58
+os: Linux-5.0.0-25-generic #26~18.04.1-Ubuntu SMP Thu Aug 1 13:51:02 UTC 2019
+nodename: tarena
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/tarena/django/day06/code/mysite6
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/django/day06/code/mysite6
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 31162
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x561c34eec240
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x561c34eec240 pid: 13755 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 13755, cores: 1)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug 21 20:04:33 2019] ***
+compiled with version: 7.4.0 on 21 August 2019 06:28:58
+os: Linux-5.0.0-25-generic #26~18.04.1-Ubuntu SMP Thu Aug 1 13:51:02 UTC 2019
+nodename: tarena
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/tarena/django/day06/code/mysite6
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/django/day06/code/mysite6
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 31162
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x55fa49166240
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55fa49166240 pid: 13839 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 13839, cores: 1)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+中间件 process_request方法被调用
+路由是: /user/change
+请求方式: GET
+[pid: 13839|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 817 bytes} [Wed Aug 21 20:04:43 2019] GET /user/change => generated 893 bytes in 44 msecs (HTTP/1.1 200) 5 headers in 277 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/change
+请求方式: POST
+[pid: 13839|app: 0|req: 2/2] 127.0.0.1 () {52 vars in 1040 bytes} [Wed Aug 21 20:04:58 2019] POST /user/change => generated 27 bytes in 49 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/chang
+请求方式: GET
+[pid: 13839|app: 0|req: 3/3] 127.0.0.1 () {42 vars in 815 bytes} [Wed Aug 21 20:05:10 2019] GET /user/chang => generated 126 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 116 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/change
+请求方式: GET
+[pid: 13839|app: 0|req: 4/4] 127.0.0.1 () {42 vars in 817 bytes} [Wed Aug 21 20:05:14 2019] GET /user/change => generated 893 bytes in 12 msecs (HTTP/1.1 200) 5 headers in 277 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Aug 21 20:44:34 2019] ***
+compiled with version: 7.4.0 on 21 August 2019 06:28:58
+os: Linux-5.0.0-25-generic #26~18.04.1-Ubuntu SMP Thu Aug 1 13:51:02 UTC 2019
+nodename: tarena
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/tarena/django/day06/code/mysite6
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/django/day06/code/mysite6
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 31162
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x563ad28ca240
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x563ad28ca240 pid: 18677 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 18677, cores: 1)
+中间件 process_request方法被调用
+路由是: /user/change
+请求方式: GET
+[pid: 18677|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 859 bytes} [Wed Aug 21 20:44:45 2019] GET /user/change => generated 1012 bytes in 46 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/change
+请求方式: POST
+[pid: 18677|app: 0|req: 2/2] 127.0.0.1 () {52 vars in 1082 bytes} [Wed Aug 21 20:44:55 2019] POST /user/change => generated 0 bytes in 148 msecs (HTTP/1.1 302) 4 headers in 133 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/login
+请求方式: GET
+[pid: 18677|app: 0|req: 3/3] 127.0.0.1 () {46 vars in 932 bytes} [Wed Aug 21 20:44:56 2019] GET /user/login => generated 1078 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /user/login
+请求方式: POST
+[pid: 18677|app: 0|req: 4/4] 127.0.0.1 () {52 vars in 1079 bytes} [Wed Aug 21 20:45:00 2019] POST /user/login => generated 0 bytes in 72 msecs (HTTP/1.1 302) 6 headers in 268 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /
+请求方式: GET
+[pid: 18677|app: 0|req: 5/5] 127.0.0.1 () {46 vars in 911 bytes} [Wed Aug 21 20:45:00 2019] GET / => generated 286 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /note/
+请求方式: GET
+./note/views.py:38: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'note.models.Note'> QuerySet.
+  paginator = Paginator(notes,5)
+[pid: 18677|app: 0|req: 6/6] 127.0.0.1 () {44 vars in 880 bytes} [Wed Aug 21 20:45:07 2019] GET /note/ => generated 609 bytes in 11 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /note/add
+请求方式: GET
+[pid: 18677|app: 0|req: 7/7] 127.0.0.1 () {44 vars in 891 bytes} [Wed Aug 21 20:45:09 2019] GET /note/add => generated 627 bytes in 11 msecs (HTTP/1.1 200) 5 headers in 277 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /note/add
+请求方式: POST
+[pid: 18677|app: 0|req: 8/8] 127.0.0.1 () {52 vars in 1073 bytes} [Wed Aug 21 20:45:12 2019] POST /note/add => generated 0 bytes in 249 msecs (HTTP/1.1 302) 5 headers in 142 bytes (1 switches on core 0)
+中间件 process_request方法被调用
+路由是: /note/
+请求方式: GET
+[pid: 18677|app: 0|req: 9/9] 127.0.0.1 () {46 vars in 919 bytes} [Wed Aug 21 20:45:13 2019] GET /note/ => generated 928 bytes in 24 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)

@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.conf import settings
+from django.http import Http404
 import os
 # Create your views here.
 def index_view(request):
@@ -23,3 +24,6 @@ def upload_view(request):
             fw.write(a_file.file.read())
             return HttpResponse("收到上传的文件:"+a_file.name)
         return HttpResponse('文件上传失败')
+
+def err_view(request):
+    raise Http404

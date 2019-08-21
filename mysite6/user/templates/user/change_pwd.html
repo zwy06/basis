@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改密码</title>
+    <style>
+        p>label{
+            display:inline-block;
+            width:80px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/user/change" method="post">
+        {% csrf_token %}
+        {{ myform1.as_p }}
+        <div>
+            <input type="submit" value="修改">
+        </div>
+        {% if err %}
+        <div>{{ err }}</div>
+        {% endif %}
+    </form>
+</body>
+</html>

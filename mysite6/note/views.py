@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from  django.http import HttpResponse
-from user.models import User
+# from user.models import User
+from django.contrib.auth.models import User
 from . import  models
 from django.core.paginator import Paginator #导入分页类
 # Create your views here.
@@ -31,7 +32,8 @@ def list2_view(request):
     user_id = request.session['user']['id']
     # 根据已登录的用户id,找到当前登录的用户
     auser = User.objects.get(id=user_id)
-    notes = auser.note_set.all()
+    # notes = auser.note_set.all()
+    notes = models.Note.objects.filter(user_id = auser.id)
     # 在此处添加分页功能
     paginator = Paginator(notes,5)
     cur_page = request.GET.get('page',1) # 得到当前的页码数
@@ -50,7 +52,7 @@ def add_view(request):
         # 得到当前用户信息
         user_id = request.session['user']['id']
         auser = User.objects.get(id=user_id)
-        anote = models.Note(user=auser)
+        anote = models.Note.objects.create(user_id=auser.id)
         anote.title=title
         anote.content=content
         anote.save()
@@ -60,7 +62,7 @@ def add_view(request):
 def mod_view(request,id):
     user_id = request.session['user']['id']
     auser = User.objects.get(id=user_id)
-    anote = models.Note.objects.get(user=auser,id=id)
+    anote = models.Note.objects.get(user_id=auser.id,id=id)
     if request.method == 'GET':
         return render(request,'note/mod_note.html',locals())
     elif request.method == 'POST':
@@ -75,6 +77,8 @@ def mod_view(request,id):
 def del_view(request,id):
     user_id = request.session['user']['id']
     auser = User.objects.get(id=user_id)
-    anote = models.Note.objects.get(user=auser, id=id)
+    anote = models.Note.objects.get(user_id=auser.id, id=id)
     anote.delete()
     return HttpResponseRedirect('/note/')
+
+
